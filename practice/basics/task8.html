@@ -1,0 +1,19 @@
+<script>
+    let user=prompt("who's there","");
+    if(user=='Admin')
+    {
+        let pass=prompt("enter password:","");
+       if (pass==="TheMaster")
+       alert("welcome!");
+       else if(pass===""|| pass===null)
+       alert("canceled");
+       else
+        alert("wrong pass");
+       
+    }
+    else if(user===""|| user===null)
+       alert("canceled");
+       else
+        alert("i dont know you");
+       
+</script>

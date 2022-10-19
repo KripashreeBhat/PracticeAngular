@@ -1,0 +1,28 @@
+<script>
+    function sumInput(){
+
+        let vals=[];
+        while(true){
+            let value= prompt("enter the numer",0);
+        if(value===""||value===null||!isFinite(value))break;
+        vals.push(+value);
+
+
+
+        }
+        
+        let sum=0;
+    for(let val of vals){
+    sum+= val;
+    
+        
+    }
+return sum;
+    }
+    alert(sumInput());
+    
+   
+
+    
+
+</script>

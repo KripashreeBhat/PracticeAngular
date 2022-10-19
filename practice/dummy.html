@@ -1,0 +1,117 @@
+<script>
+// power without recursion, using for
+
+// power =(x,n)=>{
+//     let res=1;
+//     for(let i=0; i<n;i++){
+//         res= res*x;
+//     }
+//     return res;
+// }
+// alert(power(2,3));
+
+
+// with recursion
+
+// pow =(x,n)=>{
+//     if (n==1){
+//         return x;
+//     }
+    
+//     else
+//        return x* pow(x, n-1);
+// }
+
+// alert(pow(2,3));
+
+
+// functionalities 
+
+
+// sum(1)(2)=3
+
+// function sum(a){
+//     return function(b){
+//         return a+b;
+
+//     };
+
+// }
+//  alert (sum(1)(2));
+
+// property getters and setters 
+
+// const user={
+//     firstName : 'john',
+//     lastName : 'smith',
+//     get fullName(){
+//         return `${user.firstName} ${user.lastName}`;
+//     },
+//     set fullName(val){
+//         const parts=val.split(' ');
+//         this.firstName=parts[0];
+//         this.lastName=parts[1];
+
+//     }
+    
+// };
+//     console.log(user);
+
+// CLASSES : CLASSES INHERETENCE
+
+// class Product {
+//     constructor(itemName){
+//         this.itemName =  itemName;
+//     }
+//     getItemName (){
+//         return this.itemName + " is a Product ";
+//     }
+// }
+// class Furniture extends Product{
+//     constructor(itemName){
+//         super(itemName); //calling its parent constructor 
+//     }
+//     getItemName(){
+//         return this.itemName + " is a Furniture";
+//     }
+// }
+// let Pencil = new Product('Pencil');
+// let chair = new Furniture("chair");
+
+
+// generators 
+
+
+// function* pseudoRandom(seed){
+//     let value = seed;
+     
+//     while(true){
+// value = value * 16807 % 214748364;
+// yield value;
+
+//     }
+// };
+
+// let generator = pseudoRandom(1);
+
+// alert(generator.next().value); // 16807
+// alert(generator.next().value); // 282475249
+// alert(generator.next().value); // 1622650073
+
+
+// function format for the above code
+
+function pseudoRandom(seed){
+    let value = seed;
+    return function(){
+        value = value * 16807 % 214748364;
+        return value;
+    }
+}
+
+let generator = pseudoRandom(1);
+
+alert(generator()); // 16807
+alert(generator()); // 282475249
+alert(generator()); // 162265007
+// </script>

@@ -1,0 +1,39 @@
+<script>
+    
+    function readNumber(){
+
+    let num= +prompt("enter the number",0);
+    if(isFinite(num)!=true){
+        readNumber();
+
+    }
+    else if (num == ""|| num==null ){
+        return null;
+    }
+else{
+    alert(num);
+}
+    
+    }
+    readNumber();
+
+
+
+// using do while
+
+
+// function readNumber(){
+//     let num;
+//     do{
+//         num=prompt("enter the number",0);
+
+//     }while(!isFinite(num));
+
+//     if (num == ""|| num == null ){
+//         return null;
+//      }
+//      return +num;
+// }
+
+// alert(`Read:${readNumber()}`);
+</script>

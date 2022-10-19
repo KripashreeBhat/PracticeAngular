@@ -1,0 +1,18 @@
+<script>
+    function swap(a,b){
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        return {a,b};
+
+    }
+    let a = +prompt("enter the first value",0);
+    let b = +prompt("enter the second value",0);
+    alert(`before swapping values are a=${a},b=${b}`);
+    let res= swap(a,b);
+ 
+    alert (`after swapping value are a=${res.a},b=${res.b}`);
+
+
+
+</script>

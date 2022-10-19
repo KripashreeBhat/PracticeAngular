@@ -1,0 +1,28 @@
+<script>
+
+ask=(question, yes, no)=>{
+  if (confirm(question)) yes();
+  else no();
+};
+// const  yes =() =>{
+//   alert("you agreed");
+// }
+
+ask(
+    "do you agree?",
+    yes,
+   
+    // ()=>{alert("you agreed");},
+    ()=>{alert("you cancelled");
+  }
+
+    );
+
+  function yes(){
+  alert("you agreed");
+} 
+  
+        
+    
+    
+</script>

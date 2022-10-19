@@ -1,0 +1,40 @@
+<script>
+    dayCount =(month,year)=>{
+
+   
+    switch(month){
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            return 31;
+            break;
+       
+               
+            
+           
+        case 2: if( year % 4 == 0 || year % 400 == 0 && year % 100 !=0){
+            return 29;
+        }
+        return 28;
+        break;
+
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            return 30;
+            break;
+          
+
+    }
+    }
+    let year = +prompt("enter the year",2000);
+    let month = +prompt("enter the month", 4);
+    let res= dayCount(month,year);
+    alert(`year is ${year} and days of the month is ${month} is ${res}`);
+    
+</script>

@@ -1,0 +1,23 @@
+<script>
+   const operator= prompt("eneter the operator ( either + ,- * /)","");
+ let result;
+ const a = +prompt("a?",0);
+ const b = +prompt("b?",0);
+
+   if(operator === '+') {
+    result= a + b ;
+
+   }
+   else if(operator === '-') {
+    result = a - b ;
+   }
+
+   else if (operator === '*') {
+    result= a * b ;
+   }
+   
+   else{
+    result= a/b;
+   }
+    alert(result);
+</script>

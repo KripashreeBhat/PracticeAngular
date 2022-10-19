@@ -1,0 +1,13 @@
+<script>
+    // function random(min,max){
+    //   return (min + Math.random()*(max-min)) ; 
+
+    // }
+    // alert( random(1, 5) );
+
+    function randomInteger(min,max){
+        let random= min+Math.random()*(max+1-min);
+        return Math.floor(random);
+    }
+alert(randomInteger(4,8));
+</script>

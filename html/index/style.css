@@ -1,0 +1,307 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+
+
+h1{
+    color: brown;
+   
+
+}
+
+.text-box{
+    width: 90%;
+    position: absolute;
+    top:32%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.text-box h1{
+    font-size: 62px;
+    
+}
+
+.text-box p{
+margin:10px o 40px;
+font-size:14px;
+}
+
+
+#hq{
+    color: purple;
+    border: 1px solid;
+    
+}
+.cc{
+    background-color: peru;
+}
+.dd{
+    background-color: oldlace;
+}
+.ee{
+    background-color: rgb(250, 216, 175);
+}
+.font-style{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-style: oblique;
+    text-decoration: underline;
+    text-align: center;
+}
+.centre{
+    text-align: center;
+    font-size: 30px;
+}
+
+.spacing{
+    letter-spacing: 20px;
+
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("/bodybg.jpeg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: center;
+}
+nav img{
+    width:150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(253, 253, 253);
+    display: block;
+    margin: auto;
+    transition:0.5s;
+
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.page{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(68, 44, 44);
+    border:1px solid rgb(63, 46, 46);
+    padding: 12px, 34px;
+    font-size: medium;
+    background: transparent;
+    position: relative;
+    cursor: pointer; }
+
+.page:hover{
+    border: 1px solid rgb(210, 105, 30);
+    background: rgb(210, 105, 30) ;
+    transition: 0.5s;
+
+}
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width: 700px)
+{
+.text-box h1{
+    font-size:20px;
+}
+.nav-links ul li{
+    display:block;
+}
+.nav-links{
+    position: absolute;
+    background: rgb(210, 105, 30);
+    height: 100vh;
+    width:200px;
+    top: 0;
+    right:0px;
+    text-align: left;
+
+
+}
+ nav.fa{
+    display: block;
+    color: black;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ .nav-links ul{
+    padding:30px;
+    
+ }
+ .row{
+    flex-direction: column;
+ }
+
+}
+
+.blogs{
+    position:relative;
+    margin-top: 800px;
+    background-color: white;
+    text-align: center;
+}
+h1{
+    font-size:36px;
+    font-weight: 600;
+    
+
+}
+p{
+    color:black;
+    font-size: 14px;
+    font-weight:300;
+    line-height: 22px;
+    padding:10px;
+
+}
+
+.row{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.food{
+    flex-basis: 98%;
+    background: rgb(224, 183, 183);
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    box-sizing: border-box;
+    margin-left:10px;
+
+}
+.food:hover{
+    box-shadow: 0 0 20px 0 rgb(5, 5, 5);
+    transition: 0.5sec;
+}
+.books{
+    flex-basis: 98%;
+    background: rgb(145, 88, 88);
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    box-sizing: border-box;
+
+}
+.books:hover{
+    box-shadow: 0 0 20px 0 rgb(5, 5, 5);
+    transition: 0.5sec;
+}
+
+.travel{
+    flex-basis: 98%;
+    background: rgb(248, 224, 224);
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    box-sizing: border-box;
+    margin-left:10px;
+
+}
+.travel:hover{
+    box-shadow: 0 0 20px 0 rgb(5, 5, 5);
+    transition: 0.5sec;
+}
+
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: brown;
+
+}
+
+/*-----famous----*/
+
+.trip{
+    position: absolute;
+    width:80%;
+    margin-left:80px;
+    text-align: center;
+    padding-top: 20px;
+    
+
+}
+
+.trip-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom:30px;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.trip-col img{
+    width:100%;
+}
+
+.layer{
+   opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.3sec;
+}
+.layer:hover > #london{
+    background:white;
+    opacity: 1.0;
+
+
+}
+#london{
+    width:100%;
+    font-weight:500;
+    color:rgb(187, 99, 99);
+    font-size: 26px;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+
+
+
+
+
