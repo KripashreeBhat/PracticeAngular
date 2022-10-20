@@ -1,0 +1,199 @@
+<div class="form">
+  
+  <div class="form-wrap">
+    <div class="display">
+    <div class="photo">
+       <img src="/assets/clglogo.png" alt="clg logo">
+       
+    </div>
+    <div class="heading">
+    <h2>SMVITM</h2>
+    <h2>Admission Form</h2>
+    <h2>(UG)</h2>
+  </div></div>
+    <p><small>( * Mandatory field )</small></p>
+    <form #admission="ngForm" (submit)="admissionform(admission)">
+      <div class="form-group">
+        <label for="firstname">First Name:<sup class="required">*</sup></label>
+        <input
+          type="text"
+          id="firstname"
+          [(ngModel)]="registerModel.firstname"
+          name="firstname"
+          required
+          #fname="ngModel"
+        />
+        <div>
+          <small *ngIf="fname.invalid && fname.touched"
+            >First name is a required field</small
+            >
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="middlename">Middle Name: </label>
+        <input
+          type="text"
+          id="middlename"
+          [(ngModel)]="registerModel.middlename"
+          name="middlename"
+          placeholder="(optional)"
+        />
+      </div>
+      <div class="form-group">
+        <label for="lastname">Last Name:<sup class="required">*</sup></label>
+        <input
+          type="text"
+          id="lastname"
+          [(ngModel)]="registerModel.lastname"
+          name="lastname"
+          required
+          #lname="ngModel"
+        />
+      </div>
+      <div>
+        <small *ngIf="lname.invalid && lname.touched"
+          >Last name is a required field</small
+        >
+      </div>
+      <div class="form-group-gender">
+        <label for="gender">Gender:</label>
+
+        <input
+          type="radio"
+          id="gender"
+          [(ngModel)]="registerModel.gender"
+          name="gender"
+          value="male"
+        />Male
+        <input
+          type="radio"
+          id="gender"
+          [(ngModel)]="registerModel.gender"
+          name="gender"
+          value="female"
+        />Female
+        <input
+          type="radio"
+          id="gender"
+          [(ngModel)]="registerModel.gender"
+          name="gender"
+          value="other"
+        />Others
+      </div>
+      <div class="form-group">
+        <label for="fathername"
+          >Father'sname: <sup class="required">*</sup></label
+        >
+        <input
+          type="text"
+          id="fathername"
+          [(ngModel)]="registerModel.fathername"
+          name="fathername"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="mothername"
+          >Mother'sname:<sup class="required">*</sup>
+        </label>
+        <input
+          type="text"
+          id="mothername"
+          [(ngModel)]="registerModel.mothername"
+          name="mothername"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="dob">DOB: </label>
+        <input type="date" id="dob" name="dob" /><br />
+      </div>
+      <div class="form-group">
+        <label for="phone">Mobile No:<sup class="required">*</sup></label>
+        <input
+          type="tel"
+          id="phone"
+          [(ngModel)]="registerModel.phone"
+          name="phone"
+          required
+          minlength="10"
+        />
+      </div>
+      <div class="form-group">
+        <label for="mail">Email:<sup class="required">*</sup></label>
+        <input
+          type="email"
+          id="mail"
+          [(ngModel)]="registerModel.mail"
+          name="mail"
+          placeholder="Ex: abcd@gmail.com"
+          required
+          email
+          #email="ngModel"
+        />
+        <div>
+          <small *ngIf="email.invalid && email.touched">Email is a required field</small>
+        </div>
+      </div>
+      <!-- <div class="form-group">
+    <label for="board">10<sup>th</sup> Board: </label>
+    <input type="text" id="board" [(ngModel)]="board" name="board" /><br />
+</div> -->
+      <div class="form-group">
+        <label for="grade"
+          >10<sup>th</sup> Grade:<sup class="required">*</sup>
+        </label>
+        <input
+          type="text"
+          id="grade"
+          [(ngModel)]="registerModel.grade"
+          name="grade"
+          required
+        /><br />
+      </div>
+      <!-- <div class="form-group">
+
+    <label for="boardd">12<sup>th</sup> Board: </label>
+    <input type="text" id="boardd" [(ngModel)]="boardd" name="boardd" /><br />
+</div> -->
+      <div class="form-group">
+        <label for="gradee"
+          >12<sup>th</sup> Grade:<sup class="required">*</sup>
+        </label>
+        <input
+          type="text"
+          id="gradee"
+          [(ngModel)]="registerModel.gradee"
+          name="gradee"
+          required
+        /><br />
+      </div>
+      <div class="form-group">
+        <label for="domain"
+          >Domain preference:<sup class="required">*</sup></label>
+        <select id="domain" [(ngModel)]="registerModel.domain" name="domain" required>
+          <option *ngFor="let topic of topics">{{topic}}</option>
+          <!-- <option value="1">ComputerScience Engineering</option>
+          <option value="2">Mechanical Engineering</option>
+          <option value="3">AI ML Engineering</option>
+          <option value="4">Electronics Engineering</option>
+          <option value="5">Civil Engineering</option>-->
+          </select><br /> 
+      </div>
+      <div class="checkbox">
+        <input
+          type="checkbox"
+          id="checkbox"
+          [(ngModel)]="registerModel.terms"
+          name="terms"
+          required/>
+          I hereby declare that the information provided is true.<sup
+          class="required">*</sup
+        ><br />
+      </div>
+      <div class="form-group">
+      <button type="submit" [disabled]="!admission.valid">Submit</button></div>
+    </form>
+  </div>
+
+</div>

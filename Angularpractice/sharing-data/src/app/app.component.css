@@ -1,0 +1,15 @@
+.parent{
+    border: 1px solid #00f;
+    background-color: darkblue;
+    margin:1rem 10rem;
+    padding-left:3rem;
+    font-size: 30px;
+    color: yellow;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.ch{
+    color:black;
+}

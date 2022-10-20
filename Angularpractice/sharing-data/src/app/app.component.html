@@ -1,0 +1,15 @@
+<div class="parent">
+    <h2>Parent</h2>
+    <!-- {{newReleases}} -->
+    <!-- <ol>
+        <li *ngFor = "let new of  newReleases">{{new}}</li>
+    </ol> -->
+     <p >Hey son! I finished <input [(ngModel)]="watched"> no of movies </p><br>
+     <p>{{message}}</p>
+    
+    <!-- <div class="ch"> -->
+        <button (click)="changefav()"> FAV</button>
+    </div>
+    <app-child1 [movie]="currentFav" (newReleaseEvent)="addRelease($event)"></app-child1>
+    <app-child2 [value]="newReleases" [noOfMovies]="watched" (comingsoonEvent) = "addcomingsoon($event)"></app-child2>
+<!-- </div> -->

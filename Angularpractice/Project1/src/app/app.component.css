@@ -1,0 +1,79 @@
+.para{
+    border:solid 1px;
+    margin:10px 10px;
+    background-color:#FF8585;
+    padding: 10px 30px;
+}
+ button {
+    background-color: #8F1F37; margin:10px;
+    margin:10px;
+    padding:10px;
+   }   
+   button a{
+      text-decoration: none;
+      color:white;
+      font-size: larger;
+     }
+#about{
+   text-align: center;
+}      
+    
+.background body{
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      padding-bottom: 15%;
+   }
+
+mat-toolbar{
+background-color:rgb(128, 0, 0) ;
+/* float: left; */
+}
+.nav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  
+   
+}
+.nav a:hover{
+   background-color: #fff;
+   color: black;
+}
+
+
+mat-sidenav-container{
+   height:100%
+}
+mat-sidenav mat-side-content{
+   padding:16px;
+}
+mat-sidenav{
+   background-color: maroon;
+   width:200px;
+}
+mat-sidenav img{
+   padding: 1% 0%;
+    margin:1% 0px;
+    /* max-width:20%; */
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+}
+
+.nav span{
+   padding-right: 1rem;
+
+}
+mat-tab-group{
+   background-color: rgb(201, 172, 172);
+   margin-top: 2%;
+}
+  
+label{
+   color:#fff;
+}

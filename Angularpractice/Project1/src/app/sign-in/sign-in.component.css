@@ -1,0 +1,35 @@
+mat-card{
+    max-width: 45%;
+    margin:2em auto;
+    text-align:center;
+    max-height:800px;
+   
+}
+.forgot-password {
+    float:right;
+    padding-right:60px ;
+    padding-top: 0px;
+    margin-top: 0%;
+    /* text-decoration: none; */
+}
+
+mat-card-header img{
+    padding: 1% 0%;
+    margin:1% 0px;
+    /* max-width:20%; */
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+}
+
+.layout{
+    width:80%;
+}
+
+.form-header h2 {
+    padding-top: 2px;
+}
+.material-icon{
+    padding-top: 2px;
+
+}

@@ -1,0 +1,32 @@
+<mat-card>
+    <mat-card-content>
+        <mat-card-header>
+        <img mat-card-image src="assets/clglogo.png">
+    </mat-card-header>
+<div class="form-header" >
+    <div class="material-icons">account_circle</div>
+    <h2>Log in</h2>
+</div>
+<form (ngSubmit)="onSignin()" name="signinForm" [formGroup]="signinForm">
+<div class="form-usn">
+    <mat-form-field class="layout" appearance="outline"  color="accent">
+        <mat-label >USN</mat-label>
+        <input matInput formControlName="usn" >
+    </mat-form-field>
+</div>
+<div>
+    <span class="forgot-password">Forgot Password?</span> 
+    <mat-form-field class="layout" color="accent" appearance="outline">
+        <mat-label>Enter your password</mat-label>
+        <input formControlName="password" matInput [type]="hide ?'password':'text'" required/>
+        <button mat-icon-button matSuffix (click)="hide = !hide"
+        [attr.aria-label]="'Hide Password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off':'visibility'}}</mat-icon>
+    </button>
+    <mat-error *ngIf="signinForm.get('password')?.hasError('required')">Password required</mat-error>
+</mat-form-field>
+</div> 
+<button mat-raised-button color="accent" (click)="openDialogBox()">Submit </button>
+</form>
+</mat-card-content>
+</mat-card>

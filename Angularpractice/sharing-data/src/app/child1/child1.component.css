@@ -1,0 +1,15 @@
+.child{
+    border: 1px solid #0f0;
+    margin: 1rem 10rem;
+    background-color: aliceblue;
+    padding:10px 15px;
+    font-size: 30px;
+    text-align: center;
+}
+h3{
+  text-align: center;
+}
+button{
+    background-color: darkblue;
+    color: yellow;
+}

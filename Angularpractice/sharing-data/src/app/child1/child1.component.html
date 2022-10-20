@@ -1,0 +1,12 @@
+<div class="child">
+<h3>Child</h3>
+<p>Favourite movie: {{movie}}</p><br>
+
+<label for="newmovie">Watched </label>
+<input type="text" id="newmovie" #newMovie>
+<button (click)="addNewMovies(newMovie.value)"> +</button>
+<br>
+{{child2component}}
+<br>
+<button (click) = "send()">Secret</button>
+</div>

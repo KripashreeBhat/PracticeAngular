@@ -1,0 +1,90 @@
+.form{
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 45%;
+    padding:2px;
+    line-height: 2em;   
+    display: flex;
+    /* background-image: url('assets\formbg.jpeg'); */
+}
+.form-wrap button{
+    width:45%;
+    margin:2% 25%;
+    display: block;
+    cursor: pointer;
+    line-height: 1.8em;
+    background-color:purple;
+    color: #fff;
+
+    width:100%;
+    padding:10px 5px;
+    border:#ddd 1px solid;
+    border-radius: 5px;
+    margin-left:0%;
+
+}
+.form-wrap button:hover{
+    background-color: green;
+}
+h2{
+    text-align: center;
+    color:purple;
+    font-size: 30px;
+}
+.form-wrap{
+    background-color:#DACCEC;
+    padding: 15px 35px
+}
+
+.form-wrap .form-group{
+    margin-top: 15px;
+}
+.form-wrap .form-group label{
+    display: block;
+    color:#342C3F;
+   
+}
+.form-wrap .form-group input{
+    width:100%;
+    padding:10px 5px;
+    border:#ddd 1px solid;
+    border-radius: 5px;
+
+}
+.checkbox{
+    margin:1%;
+}
+.form-group-gender{
+    word-spacing: 50px;
+    
+    /* text-align: center; */
+}
+.form-group input.ng-invalid.ng-touched{
+    border:1px solid #f00;
+}
+.required{
+    color: #f00;
+}
+small{
+    color: #f00; 
+}
+.photo{
+    width: 30%;
+}
+img {
+    float:left;
+    width:80%;
+    margin:10% 0 0 5%;
+    border-radius: 50%;
+    
+    /* height:10px; */
+}
+.display{
+    display: flex;
+}
+.heading h2{
+    text-align: center;
+
+    /* margin-right: 10%; */
+    padding:0;
+}

@@ -1,0 +1,137 @@
+.required-field{
+    color:#f00;
+}
+.required{
+    color:#f00;
+}
+/* .container{
+    display:block; */
+/* } */
+.form input{
+   display:block;
+   /* color:brown;  */
+}
+ input.ng-invalid.ng-touched{
+
+    border:1px #f00 solid;
+}
+/* @import "~@angular/material/" */
+.form{
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 45%;
+    padding:2px;
+    line-height: 2em;   
+    display: flex;
+}
+
+.form-wrap button{
+    width:45%;
+    margin:2% 25%;
+    display: block;
+    cursor: pointer;
+    line-height: 1.8em;
+    background-color:#7F3F28;
+    color: #fff;
+
+    width:100%;
+    padding:10px 5px;
+    border:#ddd 1px solid;
+    border-radius: 5px;
+    margin-left:0%;
+
+}
+.form-wrap button:hover{
+    background-color: green;
+}
+h2{
+    text-align: center;
+    color:#7F3F28;
+    font-size: 30px;
+}
+.form-wrap{
+    /* background-image:   linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    background-color:#EEEEBD;
+    padding: 15px 35px
+}
+
+.form-wrap .form-group{
+    margin-top: 15px;
+}
+.form-wrap .form-group label{
+    display: block;
+    color:#7F3F28;
+   
+}
+.form-wrap .form-group input{
+    width:100%;
+    padding:10px 5px;
+    border:#ddd 1px solid;
+    border-radius: 5px;
+
+}
+.checkbox{
+    margin:1%;
+    color: #7F3F28;
+}
+.form-group-gender{
+    display: flex;
+    margin-top: 5%;
+    word-spacing: 50px;
+    color: #7F3F28;
+    
+    
+    /* text-align: center; */
+}
+.form-group input.ng-invalid.ng-touched{
+    border:1px solid #f00;
+}
+.required{
+    color: #f00;
+}
+small{
+    color: #f00; 
+}
+.photo{
+    width: 30%;
+}
+img {
+    float:left;
+    width:80%;
+    margin:10% 0 0 5%;
+    border-radius: 50%;
+    
+    /* height:10px; */
+}
+.display{
+    display: flex;
+}
+.heading h2{
+    text-align: center;
+
+    /* margin-right: 10%; */
+    padding:0;
+}
+.form-group-select option{
+    width:100%;
+    padding:10px 5px;
+    border:#ddd 1px solid;
+    border-radius: 5px;
+}
+.mat-radio-button  ~.mat-radio-button {
+    margin-left: 30px;
+  
+  }
+  .material-icons.md-18 { font-size: 18px; }
+  .mat-form-field{
+    display: block;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  :host ::ng-deep .track circle{
+    stroke-opacity: 0.3 !important;
+  }
+ mat-spinner{
+    float: center;
+ }
+  

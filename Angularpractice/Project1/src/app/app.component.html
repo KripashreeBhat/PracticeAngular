@@ -1,0 +1,48 @@
+
+<div class="background">
+  <mat-toolbar  class="nav">
+    <span><a href="#"><mat-icon>house</mat-icon>Home</a></span>
+    <span><a href="#"><mat-icon>workspaces</mat-icon>About</a></span>
+    <span><a href="#"><mat-icon>call</mat-icon>Contact</a></span>
+    <span><a  routerLink="/sign-in"><mat-icon>account_box</mat-icon>Login</a></span>
+    <!-- <span><a href="#"><mat-icon></mat-icon>Services</a></span> -->
+  
+</mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav [(opened)]="opened"></mat-sidenav>
+    <!-- <mat-sidenav-content>Main</mat-sidenav-content> -->
+   <div> <img src="assets\clglogo.png" height ="50px"(click)="sidenav.open()" ><a routerlink="/sidenav"></a></div>
+  </mat-sidenav-container>
+
+  <body background="\assets\smvitmclgpanel.png">
+<div style = "text-align:center;border:solid 1px; padding:1px; color:#fff; background-color: #8F1F37;" appHover >
+  <h1> Shri Madhwa Vadiraja Institue Of Technology And Management</h1>
+</div>
+<!-- <div class="para" appBackground>
+  <h3 id = "about">About</h3>
+  <p>
+    Shri Madhwa Vadiraja Institute of Technology & Management is an engineering college located in Bantakal, near the temple town Udupi.
+     It is affiliated to Visvesvaraya Technological University in Belagavi and approved by the All India Council for Technical Education,
+     and the New Delhi and Karnataka state governments. The institute has been accredited by National Assessment and Accreditation Council) 
+     as Grade'A' college with CGPA of 3.13, which is the highest for any Engineering College in Coastal Karnataka and in Mysuru region of VTU.
+     The college was established in 2010 by Shri Sode Vadiraja Mutt Education Trust as Shri Madhwa Vadiraja Institute of Technology and Management under the guidance of H. H. Shri Vishwavallabha Theertha Swamiji of Shri Sode Vadiraja Mutt, Udupi who is the president of the trust. The initial intake was 60 students in 4 disciplines: 
+     civil engineering, mechanical engineering, electronics & communication engineering and computer science & engineering.
+  </p>
+</div> -->
+<!-- <div class="navbar"></div> -->
+</body>
+<mat-tab-group appearance="fill" color="accent"animationDuration="0ms">
+  <mat-tab label="Founders" ><button ><a routerLink ="/student" [queryParams]="{collegename : 'SMVITM'}">Founders </a>  </button> </mat-tab>
+  <mat-tab label="Domain"><button><a routerLink="/domain" > Domain</a></button></mat-tab>
+  <mat-tab label="Admission(UG)"><button><a routerLink="/admission-form" > Student Admission (UG)</a></button></mat-tab>
+  <mat-tab label="Admission(PG)"><button><a routerLink="/post-admission" > Student Admission (PG)</a></button></mat-tab>
+</mat-tab-group>
+
+<!-- <button ><a routerLink ="/student" [queryParams]="{collegename : 'SMVITM'}">Founders </a>  </button>
+<button><a routerLink="/admission-form" > Student Admission (UG)</a></button>
+
+<button><a routerLink="/domain" > Domain</a></button>
+      <button ><a routerLink="/post-admission" > Student Admission (PG)</a></button> -->
+   
+</div>
+<router-outlet></router-outlet>
